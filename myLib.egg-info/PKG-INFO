@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: myLib
+Version: 0.1.0
+Summary: This library is designed for analyzing the physical parameters of     light curves and spectra from various radio supernovae. It uses Chevaliers 1998     Equation 1 model and the MCMC algorithm.
+Home-page: https://github.com/yourusername/my_library
+Author: Noa Levy
+Author-email: noa.levy13@mail.huji.ac.il
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: emcee
+Requires-Dist: corner
+Requires-Dist: tqdm
+
+# My Library
+
+This library is designed for analyzing the physical parameters of 
+light curves and spectra from various radio supernovae. 
+It uses Chevaliers 1998 Equation 1 model and the MCMC algorithm.
+
+It requires as an input a csv file which contains the measured values, 
+and it must be on the following format:
+
+Its columns should be:
+delta_t | flux | flux_err | freq 
+
+where:
+delta_t is the days since explosion in days units
+flux is the flux measured in mJY units
+flux_err is the err in the flux (as stated on the article/already proccessed as you want) also in mJY
+freq is the telescope's frequency in Ghz
+
+
+
+## Installation
+
+```bash
+pip install my_library

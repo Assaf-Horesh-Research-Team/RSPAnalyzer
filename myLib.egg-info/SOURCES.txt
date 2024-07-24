@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+myLib.egg-info/PKG-INFO
+myLib.egg-info/SOURCES.txt
+myLib.egg-info/dependency_links.txt
+myLib.egg-info/requires.txt
+myLib.egg-info/top_level.txt
+my_library/__init__.py
+my_library/myLib.py
